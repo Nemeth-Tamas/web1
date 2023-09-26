@@ -1,0 +1,41 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+.align-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-item > img {
+    width: auto;
+    height: 25rem;
+    object-fit: contain;
+}
+
+.title {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+@media print {
+    nav, footer, .navbar-brand {
+        display: none;
+    }
+    .img-container {
+        width: 25vw;
+    }
+}

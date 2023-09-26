@@ -1,0 +1,44 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-us-section {
+    padding: 10px 0 50px 0;
+}
+
+.about-us-section h1 {
+    text-align: center;
+}
+
+.about-us-section .about-us-text {
+    text-align: justify;
+}
+
+
+footer {
+    margin-top: auto;
+    width: 100%;
+}
+
+.img-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+    width: 40vw;
+}
+
+@media print {
+    nav, footer, .navbar-brand {
+        display: none;
+    }
+    .img-container {
+        width: 25vw;
+    }
+}
