@@ -11,10 +11,15 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="about.css" />
+        <link rel="stylesheet" href="print.css" media="print" />
+        <link rel="stylesheet" href="nagybetu.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+                <a class="skip-to-content-link" href="#main">
+                    Skip to content
+                </a>
                 <a class="navbar-brand" href="/">NBV</a>
                 <button
                     class="navbar-toggler"
@@ -37,10 +42,18 @@
                         <a class="nav-link" href="/contact.html">Contact Us</a>
                     </div>
                 </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <button
+                        class="btn btn-warning my-2 my-sm-0"
+                        id="accessibility"
+                    >
+                        Accessibility
+                    </button>
+                </form>
             </div>
         </nav>
 
-        <aside class="img-container">
+        <aside class="img-container" id="main">
             <a href="./img/nbvlogoog.jpg" target="_blank">
                 <figure>
                     <img
@@ -55,20 +68,21 @@
         <article class="container about-us-section">
             <h1>About Us</h1>
             <p class="about-us-text">
-                We are a webshop selling bracelets, necklaces, and other
-                jewelry. We offer a wide variety of styles to choose from, so
-                you can find the perfect piece to match your personality and
-                taste. Our jewelry is made with high-quality materials and
-                craftsmanship, so you can be sure that it will last for years to
-                come.
+                We are a <strong>webshop</strong> selling
+                <strong>bracelets, necklaces, and other jewelry</strong>. We
+                offer a wide variety of styles to choose from, so you can find
+                the perfect piece to match your personality and taste. Our
+                jewelry is made with <strong>high-quality</strong> materials and
+                craftsmanship, so you can be sure that it will last for
+                <strong>years</strong> to come.
             </p>
             <p class="about-us-text">
                 We are passionate about jewelry and we love helping our
                 customers find the perfect pieces to express themselves. We
                 believe that everyone should have the opportunity to wear
-                beautiful jewelry, regardless of their budget. That's why we
-                offer a wide range of prices, so everyone can find something
-                they love.
+                <strong>beautiful</strong> jewelry, regardless of their budget.
+                That's why we offer a wide range of prices, so everyone can find
+                something they love.
             </p>
             <p class="about-us-text">
                 If you have any questions about our jewelry or our shop, please
@@ -140,5 +154,12 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"
         ></script>
+        <script>
+            const accessibility = document.getElementById("accessibility");
+            accessibility.addEventListener("click", (e) => {
+                e.preventDefault();
+                document.body.classList.toggle("nagybetu");
+            });
+        </script>
     </body>
 </html>

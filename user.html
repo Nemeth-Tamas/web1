@@ -11,10 +11,15 @@
             crossorigin="anonymous"
         />
         <link rel="stylesheet" href="user.css" />
+        <link rel="stylesheet" href="print.css" media="print" />
+        <link rel="stylesheet" href="nagybetu.css" />
     </head>
     <body>
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
+                <a class="skip-to-content-link" href="#main">
+                    Skip to content
+                </a>
                 <a class="navbar-brand" href="/">NBV</a>
                 <button
                     class="navbar-toggler"
@@ -39,10 +44,18 @@
                         <a class="nav-link" href="/contact.html">Contact Us</a>
                     </div>
                 </div>
+                <form class="form-inline my-2 my-lg-0">
+                    <button
+                        class="btn btn-warning my-2 my-sm-0"
+                        id="accessibility"
+                    >
+                        Accessibility
+                    </button>
+                </form>
             </div>
         </nav>
 
-        <div class="container">
+        <div class="container" id="main">
             <h1 class="my-5">My Account</h1>
             <div class="row gy-3">
                 <div class="col-lg-3">
@@ -177,5 +190,12 @@
             integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
             crossorigin="anonymous"
         ></script>
+        <script>
+            const accessibility = document.getElementById("accessibility");
+            accessibility.addEventListener("click", (e) => {
+                e.preventDefault();
+                document.body.classList.toggle("nagybetu");
+            });
+        </script>
     </body>
 </html>

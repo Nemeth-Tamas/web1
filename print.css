@@ -1,0 +1,18 @@
+nav, footer, .navbar-brand, video, .skip-to-content-link {
+    display: none;
+}
+
+img {
+    width: 20vw;
+    height: 20vh;
+}
+
+.bg-glassmorphism {
+    box-shadow: none;
+}
+
+.card-img-top,
+.carousel-item > img {
+    width: 20vw;
+    height: 20vw;
+}
