@@ -40,13 +40,19 @@
             </div>
         </nav>
 
-        <section class="img-container">
+        <aside class="img-container">
             <a href="./img/nbvlogo.jpg" target="_blank">
-                <img class="img-fluid" src="./img/nbvlogo.jpg" alt="NBV logo" />
+                <figure>
+                    <img
+                        class="img-fluid"
+                        src="./img/nbvlogo.jpg"
+                        alt="NBV logo"
+                    />
+                </figure>
             </a>
-        </section>
+        </aside>
 
-        <section class="container about-us-section">
+        <article class="container about-us-section">
             <h1>About Us</h1>
             <p class="about-us-text">
                 We are a webshop selling bracelets, necklaces, and other
@@ -70,7 +76,26 @@
                 <a class="contact-us-link" href="/contact.html">contact us</a>.
                 We are always happy to help!
             </p>
-        </section>
+        </article>
+
+        <aside class="container d-flex flex-column text-center">
+            <h2>Company introduction video</h2>
+            <video
+                class="video-fluid"
+                controls="true"
+                poster="./video/poster.jpg"
+            >
+                <source src="./video/nevergona.mp4" type="video/mp4" />
+                Your browser does not support the video tag.
+            </video>
+            <p class="startext">
+                * This video does not reflect on the NBV company.
+            </p>
+            <p>
+                The lyrics from the video can be found
+                <a href="/lyrics.html" class="lyricslink">here</a>
+            </p>
+        </aside>
 
         <footer class="py-3">
             <ul class="nav justify-content-center border-bottom pb-3 mb-3">

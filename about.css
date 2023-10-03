@@ -1,5 +1,11 @@
 html {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: sans-serif;
+}
+
+.contact-us-link,
+.lyricslink {
+    text-decoration: underline;
+    color: purple;
 }
 
 body {
@@ -34,8 +40,26 @@ footer {
     width: 40vw;
 }
 
+video {
+    width: 50vw;
+    margin: 0 auto;
+}
+
+.startext {
+    font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+    video {
+        width: 80vw;
+    }
+    .about-us-section {
+        padding: 10px;
+    }
+}
+
 @media print {
-    nav, footer, .navbar-brand {
+    nav, footer, .navbar-brand, video {
         display: none;
     }
     .img-container {
