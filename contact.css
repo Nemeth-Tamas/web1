@@ -1,5 +1,5 @@
 html {
-    font-family: sans-serif;
+    font-family: sans-serif, serif, monospace;
 }
 
 body {
@@ -25,7 +25,10 @@ footer {
     width: 100%;
 }
 
-.
+.termslink:visited {
+    text-decoration: underline;
+    color: purple;
+}
 
 .logo-img {
     border-radius: 5px;
